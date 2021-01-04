@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1faee;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@import "./nav";
+@import "./navbar";
+@import "./content";
+@import "./footer";
+@import "./portfolio";
+@import "./portfolio-card";

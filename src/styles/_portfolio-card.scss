@@ -1,0 +1,73 @@
+.card {
+  width: 350px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgb(225, 224, 224);
+
+  transition: all 0.5s ease;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  &:hover {
+    transition: all 0.5s ease !important;
+
+    .card-content {
+      background: #e63946;
+      color: #edf4f6;
+
+      .card-title {
+        color: #edf4f6;
+      }
+    }
+
+    .card-header {
+      background-size: 400px;
+    }
+  }
+
+  .card-header {
+    height: 200px;
+    background-size: cover !important;
+  }
+
+  .card-content {
+    padding: 20px;
+    text-align: left;
+    background: #edf4f6;
+    font-size: 15px;
+    transition: all 0.5s ease;
+
+    .card-title {
+      font-size: 19px;
+      margin-bottom: 10px;
+      color: #e63946;
+    }
+
+    .card-desc {
+      line-height: 1.4;
+    }
+
+    .tech {
+      span {
+        display: inline-block;
+        padding: 2px 5px;
+        margin: 5px;
+        background: #333;
+        color: #edf4f6;
+        border-radius: 5px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    margin: 15px 0;
+  }
+}
